@@ -1,0 +1,7 @@
+OUTPUT "cardápio: 1-macarrão, 2-pizza, 3-hamburguer"
+OUTPUT "escolha uma das refeições!"
+DECLARE escolha : STRING
+INPUT escolha
+IF (escolha = 1) OUTPUT "macarrão é uma bela escolha!" ENDIF
+IF (escolha = 2) OUTPUT "pizza é uma bela escolha!" ENDIF
+IF (escolha = 3) OUTPUT "hamburguer é uma bela escolha" ENDIF
