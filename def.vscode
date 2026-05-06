@@ -2,7 +2,6 @@ import mysql.connector
 
 # FUNÇÃO DE CONEXÃO
 def conectar():
-    try:
         conexao = mysql.connector.connect(
             host = "localhost",
             user = "root",
@@ -16,10 +15,6 @@ def conectar():
         else:
             print("Falha na conexão")
             return None
-
-    except Exception as erro:
-        print("Erro:", erro)
-        return None
 
 
 # FUNÇÃO PARA INSERIR DADOS
