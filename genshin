@@ -1,0 +1,26 @@
+create table usuario (
+uid_usuario int primary key auto_increment,
+nome varchar (100) not null,
+data_nascimento date not null,
+email text not null
+);
+
+create table personagem (
+id_personagem int primary key auto_increment,
+nome varchar (100) not null,
+genero varchar (50) not null,
+data_aniversario date not null,
+data_lancamento date not null,
+uid_usuario int,
+
+foreign key (uid_usuario) references usuario (uid_usuario));
+ 
+ create table funcao_personagem (
+ funcao varchar(100) not null,
+ elemento varchar(45) not null,
+ arma varchar (50) not null,
+ id_personagem int,
+ 
+ foreign key (id_personagem) references personagem (id_personagem));
+ 
+ 
