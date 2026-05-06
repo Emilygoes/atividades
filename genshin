@@ -2,6 +2,7 @@ create table usuario (
 uid_usuario int primary key auto_increment,
 nome varchar (100) not null,
 data_nascimento date not null,
+genero varchar(40) not null,
 email text not null
 );
 
@@ -22,5 +23,25 @@ foreign key (uid_usuario) references usuario (uid_usuario));
  id_personagem int,
  
  foreign key (id_personagem) references personagem (id_personagem));
- 
+
+
+create table build (
+id_build primary key auto_increment,
+artefatos text not null:
+prioridade text text not null:
+talentos text not null:
+atributos_indicados text not null:
+id_personagem int,
+
+foreign key(id_personagem) references personagem (id_personagem));
+
+create table arma (
+    id_arma INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    raridade INT NOT NULL,
+    tipo VARCHAR(50) NOT NULL,
+    ataque_base INT,
+
+    id_personagem INT,
+    FOREIGN KEY (id_personagem) REFERENCES personagem(id_personagem)
  
