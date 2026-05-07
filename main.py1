@@ -1,27 +1,8 @@
-1= 4 filmes de 2008 com nome e gênero:
-1-What Happens in Vegas genero= comedia
-2-WALL-E  genero= animacao
-3-Twilight gênero= romance
-4-The Duchess gênero= drama
+import mysql.connector
 
 
-2-3 filmes com maior nota do público:
-WALL-E nota = 96
-Midnight in Paris = 93
-Enchanted = 93
+conexao = conectar()
 
-3-filmes com nota maior que 75:
-14 filmes
-
-4-filmes do gênero comédia:
-42 filmes
-
-5-filme com maior lucro:
-maior lucro= fireproof
-
-6-filmes da disney
-When in Rome, WALL-E, The Proposal, Tangled, High School Musical 3: Senior Year, Gnomeo and Juliet, Gnomeo and Juliet, Enchanted
-
-7- filme com maior nota e menor nota:
-maior= WALL-E 
-menor= Good Luck Chuck
+if conexao:
+    inserir_dados(conexao)
+    exibir_dados(conexao)
